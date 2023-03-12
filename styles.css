@@ -41,6 +41,7 @@ body {
 .user-welcome img {
     width: auto;
     height: 70px;
+    border-radius: 40%;
 }
 
 .user-greeting .greeting {
@@ -78,6 +79,7 @@ body {
 
 .user-settings img {
     width: 25px;
+    border-radius: 50%;
 }
 
 .search-bar {
