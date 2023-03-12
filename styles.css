@@ -50,9 +50,25 @@ body {
     font-size: 1.5em;
 }
 
+.header-options button {
+    background-color: #60a5fa;
+    color: white;
+    font-weight: 700;
+    border-width: 0px;
+    border-radius: 18px;
+    height: 40px;
+    width: 100px;
+}
+
+.header-options button:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.05);
+} 
 
 .header-options {
     display: flex;
+    gap: 15px;
+    align-items: center;
 
 }
 
@@ -94,10 +110,6 @@ body {
     cursor: pointer;
     -webkit-transform: scale(1.05);
 }
-
-
-
-
 
 
 
@@ -156,9 +168,120 @@ body {
     grid-column: 2/3;
     display: grid;
     margin-top: 5px;
+    gap: 35px;
+    grid-template-columns: 3fr 1fr;
+
 }
+
+.projects {
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+}
+
+.card {
+    display: grid;
+
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 4px 0px #535353;
+    margin: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left:7.5px solid #60a5fa;
+}
+
+.card-title {
+    padding-top: 15px;
+    font-weight: 700;
+}
+
+.card img {
+    width: 25px;
+    margin: 5px;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: end;
+
+}
+
+.card img:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.15);
+}
+
+.right-sidebar {
+    display: grid;
+    gap: 15px;
+    padding-right: 25px;
+    padding-top: 15px;
+}
+
+.announcements .header {
+    box-shadow: none;
+    background-color: #f1faee;
+    font-size: 1.2em;
+    font-weight: 650;
+    padding-left: 15px;
+}
+
+.announcement-container {
+    background-color: white;
+    box-shadow: 2px 2px 4px 0px #535353;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.announcement-container .title {
+    font-weight: 650;
+}
+
+.announcement-container .details {
+    font-weight: 300;
+    font-size: 0.85em;
+}
+
+
+.Trending .header {
+    box-shadow: none;
+    background-color: #f1faee;
+    font-size: 1.2em;
+    font-weight: 650;
+    padding-left: 15px;
+}
+
+.trending-container {
+    background-color: white;
+    box-shadow: 2px 2px 4px 0px #535353;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+.trending-container .title {
+    font-weight: 650;
+}
+
+.trending-container .info {
+    font-weight: 300;
+    font-size: 0.85em;
+}
+
+
 
 .footer {
     background-color: #60a5fa;
     grid-column: 1/3;
+    color: white;
+    font-size: 0.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
